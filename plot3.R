@@ -1,6 +1,6 @@
 #if you aleady have dataset "data1"(the total data) and "subdata"(data for two days)
 #     after check plot1.R, and plot2.R, then please just ignore all the lines 
-#     starting with "#". otherwise, please remove "#" for following commands. 
+#     starting with "#". otherwise, please remove "#" of following commands. 
 
 #data1 <- read.table(file = "./household_power_consumption.txt", header = T, sep = ";", 
 #colClasses = c("character","character","numeric","numeric","numeric"
