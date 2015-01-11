@@ -1,5 +1,5 @@
 #if you aleady have dataset "data1"(the total data) after check plot1.R,
-#    then please just ignore or the lines starting with "#". 
+#    then please just ignore all the lines starting with "#". 
 #     otherwise, please remove "#" for following commands. 
 
 #data1 <- read.table(file = "./household_power_consumption.txt", header = T, sep = ";", 
