@@ -1,4 +1,3 @@
-
 data1 <- read.table(file = "./household_power_consumption.txt", header = T, sep = ";", 
 colClasses = c("character","character","numeric","numeric","numeric"
                ,"numeric","numeric","numeric","numeric"), na.strings = "?")
