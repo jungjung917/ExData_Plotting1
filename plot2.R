@@ -1,10 +1,7 @@
-#if you aleady have dataset "data1"(the total data) after check plot1.R,
-#    then please just ignore all the lines starting with "#". 
-#     otherwise, please remove "#" for following commands. 
 
-#data1 <- read.table(file = "./household_power_consumption.txt", header = T, sep = ";", 
-#colClasses = c("character","character","numeric","numeric","numeric"
-#               ,"numeric","numeric","numeric","numeric"), na.strings = "?")
+data1 <- read.table(file = "./household_power_consumption.txt", header = T, sep = ";", 
+colClasses = c("character","character","numeric","numeric","numeric"
+               ,"numeric","numeric","numeric","numeric"), na.strings = "?")
 
 subdata <- subset(data1, Date == "1/2/2007" | Date == "2/2/2007")
 subdata$DateTime = as.POSIXct(strptime(paste(subdata$Date, subdata$Time), format="%d/%m/%Y %H:%M:%S"))
