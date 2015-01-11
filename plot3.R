@@ -4,7 +4,7 @@ colClasses = c("character","character","numeric","numeric","numeric"
 subdata <- subset(data1, Date == "1/2/2007" | Date == "2/2/2007")
 subdata$DateTime = as.POSIXct(strptime(paste(subdata$Date, subdata$Time), format="%d/%m/%Y %H:%M:%S"))
 
-png(filename = "Plot3.png", width = 480, height = 480)
+png(filename = "plot3.png", width = 480, height = 480)
 par(mar=c(3,5,2,2))
 plot(subdata$DateTime,subdata$Sub_metering_1, type = 'n', ylab="Energy sub metering")
 lines(subdata$DateTime, subdata$Sub_metering_1, col = "black")
